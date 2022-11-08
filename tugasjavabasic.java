@@ -254,7 +254,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 System.out.println("Masukan nomer meter");
                                                 cm = sc.nextInt();
                                                 System.out.println(
-                                                        "jadi " + cm + "meter di ubah ke cm hasilnya: " + (cm * 10)
+                                                        "jadi " + cm + "meter di ubah ke cm hasilnya: " + (cm * 100)
                                                                 + "cm");
                                                 break;
                                             case 6:
@@ -263,7 +263,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 System.out.println("Masukan nomer meter");
                                                 mm = sc.nextInt();
                                                 System.out.println(
-                                                        "jadi " + mm + "meter di ubah ke mm hasilnya: " + (mm * 10)
+                                                        "jadi " + mm + "meter di ubah ke mm hasilnya: " + (mm * 1000)
                                                                 + "mm");
                                                 break;
 
@@ -322,7 +322,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 System.out.println("Masukan nomer gram");
                                                 cg = sc.nextInt();
                                                 System.out.println(
-                                                        "jadi " + cg + "gram di ubah ke cg hasilnya: " + (cg * 10)
+                                                        "jadi " + cg + "gram di ubah ke cg hasilnya: " + (cg * 100)
                                                                 + "cg²");
                                                 break;
                                             case 6:
@@ -331,7 +331,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 System.out.println("Masukan nomer gram");
                                                 mg = sc.nextInt();
                                                 System.out.println(
-                                                        "jadi " + mg + "gram di ubah ke mg hasilnya: " + (mg * 10)
+                                                        "jadi " + mg + "gram di ubah ke mg hasilnya: " + (mg * 1000)
                                                                 + "mg²");
                                                 break;
 
