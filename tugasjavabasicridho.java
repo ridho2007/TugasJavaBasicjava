@@ -166,33 +166,119 @@ System.out.println("  Silahkan Pilih Menu ");
                                 int D3 = 1;
                                 do {
                                     System.out.println("Derajat celcius");
-                                    System.out.println("1. fahrenheit\n2. reamur\n3.exit  ");
+                                    System.out.println("1. celcius\n2. farenhait\n3.reamur \n 4.exit");
                                     System.out.println("Masukan nomer yang anda pilih: ");
                                     D3 = sc.nextInt();
                                     switch (D3) {
                                         case 1:
-                                            int c;
-                                          
-                                            System.out.println("Farenhiat");
+                                        int c1 =1;
+                                        do {
+                                            System.out.println("Derajat celcius");
+                                            System.out.println("1. celcius ke farenhait \n2. celcius ke reamur \n 3.exit");
                                             System.out.println("Masukan nomer yang anda pilih: ");
-                                            c = sc.nextInt();
-
-                                            System.out.println(
-                                                    c+"°C" + " di ubah ke " + ((9 * c/5) + 32) + " °F");
-                                            ;
-                                            break;
-                                        case 2:
-                                            int R;
+                                            c1 = sc.nextInt();
+                                            switch (c1) {
+                                                case 1:
+                                                Float c;
+                                          
+                                                System.out.println("Farenhiat");
+                                                System.out.println("Masukan nomer yang anda pilih: ");
+                                                c = sc.nextFloat();
+    
+                                                System.out.println(
+                                                        c+"°C" + " di ubah ke " + ((9 * c/5) + 32) + " °F");
+                                                ; 
+                                                    break;
+                                            case 2:
+                                            float R;
                                            
                                             System.out.println("Reamur");
                                             System.out.println("Masukan nomer yang anda pilih: ");
-                                            R = sc.nextInt();
+                                            R = sc.nextFloat();
 
                                             System.out.println(R +"°C"+ " di ubah ke "
                                                     + (4* R /5) + " °R");
                                             ;
                                             break;
-                                      
+                                                default:
+                                                    break;
+                                            }
+                                        } while (c1 <3);
+                                           
+                                            break;
+                                        case 2:
+                                            int F7 = 1;
+                                            do {
+                                                System.out.println("Derajat farenhait");
+                                            System.out.println("1. farenhait ke celcius \n2. farenhait ke reamur \n 3.exit");
+                                            System.out.println("Masukan nomer yang anda pilih: ");
+                                            F7 = sc.nextInt();
+                                            switch (F7) {
+                                                case 1:
+                                                Float F8;
+                                          
+                                                System.out.println("Farenhiat");
+                                                System.out.println("Masukan nomer yang anda pilih: ");
+                                                F8 = sc.nextFloat();
+    
+                                                System.out.println(
+                                                        F8+"°F" + " di ubah ke " + ((F8-32) * 5/9) + " °C");
+                                                ; 
+                                                    break;
+                                                case 2:
+                                                Float F9;
+                                          
+                                                System.out.println("Farenhiat");
+                                                System.out.println("Masukan nomer yang anda pilih: ");
+                                                F9 = sc.nextFloat();
+    
+                                                System.out.println(
+                                                        F9+"°F" + " di ubah ke " + ((F9-32) * 4/9) + " °R");
+                                                ; 
+                                                    break;
+                                            
+                                                default:
+                                                    break;
+                                            }
+                                            } while (F7<3);
+                                            break;
+                                      case 3:
+                                      int R1=1;
+                                     do {
+                                        System.out.println("Derajat Reamur");
+                                        System.out.println("1. reamur ke celcius \n2. reamur ke farenhait \n 3.exit");
+                                        System.out.println("Masukan nomer yang anda pilih: ");
+                                        F7 = sc.nextInt();
+                                        switch (R1) {
+                                            case 1:
+                                            float R8;
+                                          
+                                            System.out.println("Reamur");
+                                            System.out.println("Masukan nomer yang anda pilih: ");
+                                            R8 = sc.nextFloat();
+
+                                            System.out.println(
+                                                    R8+"°R" + " di ubah ke " + (R8-32 * 5/4) + " °C");
+                                            ; 
+                                                break;
+                                            case 2:
+                                            float R9;
+                                          
+                                            System.out.println("Reamur");
+                                            System.out.println("Masukan nomer yang anda pilih: ");
+                                            R9 = sc.nextFloat();
+
+                                            System.out.println(
+                                                    R9+"°R" + " di ubah ke " + (R9 * 9/4+32) + " °F");
+                                            ; 
+                                                break;
+                                        
+                                            default:
+                                                break;
+                                        }
+                                     } while (R1<3);
+
+                                      break;
                                         default:
                                             break;
                                     }
