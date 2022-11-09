@@ -166,7 +166,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                 int D3 = 1;
                                 do {
                                     System.out.println("Derajat celcius");
-                                    System.out.println("1. Reamur\n2. Fahrenheit\n3.exit  ");
+                                    System.out.println("1. fahrenheit\n2. reamur\n3.exit  ");
                                     System.out.println("Masukan nomer yang anda pilih: ");
                                     D3 = sc.nextInt();
                                     switch (D3) {
@@ -178,7 +178,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                             c = sc.nextInt();
 
                                             System.out.println(
-                                                    c+"°C" + " di ubah ke " + (9/5 * c + 32) + " °F");
+                                                    c+"°C" + " di ubah ke " + ((9 * c/5) + 32) + " °F");
                                             ;
                                             break;
                                         case 2:
@@ -189,7 +189,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                             R = sc.nextInt();
 
                                             System.out.println(R +"°C"+ " di ubah ke "
-                                                    + (9/5* R + 32) + " °R");
+                                                    + (4* R /5) + " °R");
                                             ;
                                             break;
                                       
