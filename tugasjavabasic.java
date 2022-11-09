@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 public class tugasjavabasic {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,8 +15,8 @@ public class tugasjavabasic {
         System.out.print("pin: ");
         sandipin = sc.nextInt();
 
-        if (sandinama.equals("Administrator") && sandipasword >= 5 && sandipin == 123456789) {
-            System.out.println("akses di terima");
+        if (sandinama.equals("Administrator") && sandipasword >= 11111 && sandipin == 123456789) {
+            System.out.println("Akses Diterima, Selamat Datang!!");
 
             int no1 = 1;
 
@@ -51,8 +53,8 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 pp1 = sc.nextInt();
                                                 System.out.print("masukan lebar :");
                                                 pp2 = sc.nextInt();
-                                                System.out.println("jadi bila " + pp1 + "X" + pp2 + " maka hasilnya "
-                                                        + (pp1 * pp2) + "M²");
+                                                System.out.println("jadi bila " + pp1 + " X " + pp2 + " maka hasilnya "
+                                                        + (pp1 * pp2) + " M²");
 
                                                 break;
                                             case 2:
@@ -61,20 +63,20 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 System.out.println("persegi");
                                                 System.out.print("masukan sisi :");
                                                 p1 = sc.nextInt();
-                                                System.out.println("jadi bila " + p1 + "X" + p1 + " maka hasilnya "
-                                                        + (p1 * p1) + "M²");
+                                                System.out.println("jadi bila " + p1 + " X " + p1 + " maka hasilnya "
+                                                        + (p1 * p1) + " M²");
                                                 break;
                                             case 3:
-                                                int a;
+                                                int alas;
                                                 int t;
 
                                                 System.out.println("segitiga");
-                                                System.out.print("masukan sisi :");
-                                                a = sc.nextInt();
-                                                System.out.print("masukan sisi :");
+                                                System.out.print("masukan alas :");
+                                                alas = sc.nextInt();
+                                                System.out.print("masukan tinggi :");
                                                 t = sc.nextInt();
-                                                System.out.println("jadi bila 1/2" + a + "X" + t + " maka hasilnya "
-                                                        + (a * t / 2) + "M²");
+                                                System.out.println("jadi bila 1/2 X " + alas + " X " + t + " maka hasilnya "
+                                                        + (alas* t/2 ) +  "M²");
                                                 break;
                                             case 4:
                                                 int jj;
@@ -83,7 +85,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 System.out.print("masukan sisi :");
                                                 jj = sc.nextInt();
                                                 System.out.println("jadi bila 22/7" + jj + "X" + jj + " maka hasilnya "
-                                                        + (22 * jj * jj / 7) + "M²");
+                                                        + (22*  jj * jj /7) + "M²");
                                                 break;
 
                                             default:
@@ -94,7 +96,6 @@ System.out.println("  Silahkan Pilih Menu ");
                                     break;
                                 case 2:
                                     int V1 = 1;
-
                                     do {
                                         System.out.println("Volume");
                                         System.out.println("1.balok\n2.kubus\n3.bola \n4.exit");
@@ -112,9 +113,9 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 lebar1 = sc.nextInt();
                                                 System.out.print("masukan tinggi :");
                                                 tinggi1 = sc.nextInt();
-                                                System.out.println("jadi bila " + panjang1 + "X" + lebar1 + "X"
+                                                System.out.println("jadi bila " + panjang1 + " X " + lebar1 + " X "
                                                         + tinggi1
-                                                        + " maka hasilnya " + (panjang1 * lebar1 * tinggi1) + "L");
+                                                        + " maka hasilnya " + (panjang1 * lebar1 * tinggi1) + "Liter");
                                                 break;
                                             case 2:
                                                 int sisi1;
@@ -124,9 +125,9 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 sisi1 = sc.nextInt();
 
                                                 System.out.println(
-                                                        "jadi bila " + sisi1 + "X" + sisi1 + "X" + sisi1
+                                                        "jadi bila " + sisi1 + " X " + sisi1 + " X " + sisi1
                                                                 + " maka hasilnya "
-                                                                + (sisi1 * sisi1 * sisi1) + "L");
+                                                                + (sisi1 * sisi1 * sisi1) + " Liter");
                                                 break;
                                             case 3:
                                                 int sisi2;
@@ -139,7 +140,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                         "jadi bila 4/3 X 22/7 X " + sisi2 + " X " + sisi2 + " X "
                                                                 + sisi2
                                                                 + " maka hasilnya "
-                                                                + (4 * 22 * sisi2 * sisi2 * sisi2 / 3 / 7) + "L");
+                                                                + (4*sisi2*sisi2*sisi2/3*22/7) + "Liter");
                                                 break;
 
                                             default:
@@ -162,51 +163,43 @@ System.out.println("  Silahkan Pilih Menu ");
                             K1 = sc.nextInt();
                             switch (K1) {
                                 case 1:
-                                    int D1 = 1;
-                                    do {
-                                        System.out.println("Derajat");
-                                        System.out.println("1.Celcius\n2. Reamur\n3. Fahrenheit\n4.exit  ");
-                                        System.out.println("Masukan nomer yang anda pilih: ");
-                                        D1 = sc.nextInt();
-                                        switch (D1) {
-                                            case 1:
-                                                int derajat;
-                                                Float celcius = 273.15f;
-                                                System.out.println("celcius");
-                                                System.out.println("Masukan nomer yang anda pilih: ");
-                                                derajat = sc.nextInt();
+                                int D3 = 1;
+                                do {
+                                    System.out.println("Derajat celcius");
+                                    System.out.println("1. Reamur\n2. Fahrenheit\n3.exit  ");
+                                    System.out.println("Masukan nomer yang anda pilih: ");
+                                    D3 = sc.nextInt();
+                                    switch (D3) {
+                                        case 1:
+                                            int c;
+                                          
+                                            System.out.println("Farenhiat");
+                                            System.out.println("Masukan nomer yang anda pilih: ");
+                                            c = sc.nextInt();
 
-                                                System.out.println(
-                                                        derajat + " di ubah ke " + (derajat - celcius) + " °C");
-                                                ;
-                                                break;
-                                            case 2:
-                                                int derajat1;
-                                                Float fahrenheit = 457.87f;
-                                                System.out.println("Fahrenheit");
-                                                System.out.println("Masukan nomer yang anda pilih: ");
-                                                derajat1 = sc.nextInt();
+                                            System.out.println(
+                                                    c+"°C" + " di ubah ke " + (9/5 * c + 32) + " °F");
+                                            ;
+                                            break;
+                                        case 2:
+                                            int R;
+                                           
+                                            System.out.println("Reamur");
+                                            System.out.println("Masukan nomer yang anda pilih: ");
+                                            R = sc.nextInt();
 
-                                                System.out.println(derajat1 + " di ubah ke "
-                                                        + (derajat1 * 9 / 5 - fahrenheit) + " °F");
-                                                ;
-                                                break;
-                                            case 3:
-                                                int derajat2;
-
-                                                System.out.println("Reamur");
-                                                System.out.println("Masukan nomer yang anda pilih: ");
-                                                derajat2 = sc.nextInt();
-
-                                                System.out.println(
-                                                        derajat2 + " di ubah ke " + (derajat2 - 273) * 4 / 5 + " °R");
-                                                ;
-                                                break;
-                                            default:
-                                                break;
-                                        }
-                                    } while (D1 < 4);
+                                            System.out.println(R +"°C"+ " di ubah ke "
+                                                    + (9/5* R + 32) + " °R");
+                                            ;
+                                            break;
+                                      
+                                        default:
+                                            break;
+                                    }
+                                } while (D3 < 3);
+break;
                                 case 2:
+
                                     int jarak1 = 1;
                                     do {
                                         System.out.println("Panjang");
@@ -216,52 +209,52 @@ System.out.println("  Silahkan Pilih Menu ");
                                         jarak1 = sc.nextInt();
                                         switch (jarak1) {
                                             case 1:
-                                                int km;
+                                                float km;
                                                 System.out.println("kilometer");
                                                 System.out.println("Masukan nomer meter");
-                                                km = sc.nextInt();
+                                                km = sc.nextFloat();
                                                 System.out.println("jadi " + km + "meter di ubah ke Km hasilnya: "
                                                         + (km / 1000) + "Km²");
                                                 break;
                                             case 2:
-                                                int hm;
+                                                float hm;
                                                 System.out.println("hektometer");
                                                 System.out.println("Masukan nomer meter");
-                                                hm = sc.nextInt();
+                                                hm = sc.nextFloat();
                                                 System.out.println("jadi " + hm + "meter di ubah ke hm hasilnya: "
                                                         + (hm / 100) + "hm");
                                                 break;
                                             case 3:
-                                                int dam;
+                                                float dam;
                                                 System.out.println("dekameter");
                                                 System.out.println("Masukan nomer meter");
-                                                dam = sc.nextInt();
+                                                dam = sc.nextFloat();
                                                 System.out.println("jadi " + dam + "meter di ubah ke dam hasilnya: "
                                                         + (dam / 10) + "dam");
                                                 break;
                                             case 4:
-                                                int dm;
+                                                float dm;
                                                 System.out.println("desimeter");
                                                 System.out.println("Masukan nomer meter");
-                                                dm = sc.nextInt();
+                                                dm = sc.nextFloat();
                                                 System.out.println(
                                                         "jadi " + dm + "meter di ubah ke dm hasilnya: " + (dm * 10)
                                                                 + "dm");
                                                 break;
                                             case 5:
-                                                int cm;
+                                                float cm;
                                                 System.out.println("centimeter");
                                                 System.out.println("Masukan nomer meter");
-                                                cm = sc.nextInt();
+                                                cm = sc.nextFloat();
                                                 System.out.println(
                                                         "jadi " + cm + "meter di ubah ke cm hasilnya: " + (cm * 100)
                                                                 + "cm");
                                                 break;
                                             case 6:
-                                                int mm;
+                                                float mm;
                                                 System.out.println("milimeter");
                                                 System.out.println("Masukan nomer meter");
-                                                mm = sc.nextInt();
+                                                mm = sc.nextFloat();
                                                 System.out.println(
                                                         "jadi " + mm + "meter di ubah ke mm hasilnya: " + (mm * 1000)
                                                                 + "mm");
@@ -283,56 +276,56 @@ System.out.println("  Silahkan Pilih Menu ");
                                         berat1 = sc.nextInt();
                                         switch (berat1) {
                                             case 1:
-                                                int kg;
+                                                float kg;
                                                 System.out.println("kilogram");
-                                                System.out.println("Masukan nomer gram");
-                                                kg = sc.nextInt();
+                                                System.out.println("Masukan nomer gram: ");
+                                                kg = sc.nextFloat();
                                                 System.out.println("jadi " + kg + "gram di ubah ke Kg hasilnya: "
                                                         + (kg / 1000) + "Kg");
                                                 break;
                                             case 2:
-                                                int hg;
+                                                float hg;
                                                 System.out.println("hektogram");
-                                                System.out.println("Masukan nomer gram");
-                                                hg = sc.nextInt();
+                                                System.out.println("Masukan nomer gram: ");
+                                                hg = sc.nextFloat();
                                                 System.out.println(
                                                         "jadi " + hg + "gram di ubah ke hg hasilnya: " + (hg / 100)
                                                                 + "hg");
                                                 break;
                                             case 3:
-                                                int dag;
+                                                float dag;
                                                 System.out.println("dekagram");
-                                                System.out.println("Masukan nomer gram");
-                                                dag = sc.nextInt();
+                                                System.out.println("Masukan nomer gram: ");
+                                                dag = sc.nextFloat();
                                                 System.out.println("jadi " + dag + "gram di ubah ke dag hasilnya: "
-                                                        + (dag / 10) + "dag²");
+                                                        + (dag / 10) + "dag");
                                                 break;
                                             case 4:
-                                                int dg;
+                                                float dg;
                                                 System.out.println("desigram");
-                                                System.out.println("Masukan nomer gram");
-                                                dg = sc.nextInt();
+                                                System.out.println("Masukan nomer gram: ");
+                                                dg = sc.nextFloat();
                                                 System.out.println(
                                                         "jadi " + dg + "gram di ubah ke dg hasilnya: " + (dg * 10)
-                                                                + "dg²");
+                                                                + "dg");
                                                 break;
                                             case 5:
-                                                int cg;
+                                                float cg;
                                                 System.out.println("centigram");
-                                                System.out.println("Masukan nomer gram");
-                                                cg = sc.nextInt();
+                                                System.out.println("Masukan nomer gram: ");
+                                                cg = sc.nextFloat();
                                                 System.out.println(
                                                         "jadi " + cg + "gram di ubah ke cg hasilnya: " + (cg * 100)
-                                                                + "cg²");
+                                                                + "cg");
                                                 break;
                                             case 6:
-                                                int mg;
+                                                float mg;
                                                 System.out.println("miligram");
-                                                System.out.println("Masukan nomer gram");
-                                                mg = sc.nextInt();
+                                                System.out.println("Masukan nomer gram: ");
+                                                mg = sc.nextFloat();
                                                 System.out.println(
                                                         "jadi " + mg + "gram di ubah ke mg hasilnya: " + (mg * 1000)
-                                                                + "mg²");
+                                                                + "mg");
                                                 break;
 
                                             default:
@@ -367,33 +360,37 @@ System.out.println("  Silahkan Pilih Menu ");
                                 vip = sc.nextInt();
                                 switch (vip) {
                                     case 1:
-                                        String upercase = "";
-                                        System.out.print("Ketik apa yang mau di upercase");
-                                        upercase = sc.next();
-                                        String strUpper = upercase.toUpperCase();
-                                        System.out.println("upercase: " + strUpper);
+                                        String upercase ;
+                                        System.out.print("Ketik apa yang mau di upercase/kapital: ");
+                                        sc.nextLine();
+                                        upercase = sc.nextLine().toUpperCase();
+                                        System.out.println("upercase: " + upercase);
                                         break;
                                     case 2:
-                                        String lowercase = "";
-                                        System.out.print("Ketik apa yang mau di lowercase");
-                                        lowercase = sc.next();
-                                        String low = lowercase.toLowerCase();
-                                        System.out.println("lowercase: " + low);
+                                    String lowercase ;
+                                    System.out.print("Ketik apa yang mau di lowercase/diperkecil: ");
+                                    sc.nextLine();
+                                    lowercase = sc.nextLine().toLowerCase();
+                                    System.out.println("lowercase: " + lowercase);
                                         break;
                                     case 3:
+                                    String kebalik;
+                                    System.out.println("Ketik apa yang ingin dijadikan Reverse/dibalikan : ");
+                                     sc.nextLine();
+                                    kebalik = sc.nextLine();
 
-                                        String reverse;
-                                        String reversedStr = "";
-                                        System.out.print("Ketik apa yang mau di reverse: ");
-                                        reverse = sc.next();
-                                        for (int i = 0; i < reverse.length(); i++) {
-                                            reversedStr = reverse.charAt(i) + reversedStr;
-                                        }
+                                        List<String> List = Arrays.asList(kebalik.split(" "));
+                                        System.out.print("Reversed : ");
+                                        Collections.reverse(List);
+                                        System.out.println(String.join(" ",List )); 
+                                    break;
+                                  
+                                    case 4:
+                                    sc.close();
+                                    break;
 
-                                        System.out.println("Reversed string: " + reversedStr);
-                                        break;
-                                        
-                                        
+                                    
+                                    
                                     default:
                                         break;
                                 }
@@ -409,7 +406,7 @@ System.out.println("  Silahkan Pilih Menu ");
                 }
             } while (no1 < 4);
             // login
-            sc.close();
+       
         } else {
             System.out.println("Akses Ditolak");
             sc.close();
