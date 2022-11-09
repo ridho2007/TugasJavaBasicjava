@@ -192,7 +192,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                             case 2:
                                             float R;
                                            
-                                            System.out.println("Reamur");
+                                            System.out.println("reamur");
                                             System.out.println("Masukan nomer yang anda pilih: ");
                                             R = sc.nextFloat();
 
@@ -217,7 +217,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 case 1:
                                                 Float F8;
                                           
-                                                System.out.println("Farenhiat");
+                                                System.out.println("calecius");
                                                 System.out.println("Masukan nomer yang anda pilih: ");
                                                 F8 = sc.nextFloat();
     
@@ -228,7 +228,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                                 case 2:
                                                 Float F9;
                                           
-                                                System.out.println("Farenhiat");
+                                                System.out.println("reamur");
                                                 System.out.println("Masukan nomer yang anda pilih: ");
                                                 F9 = sc.nextFloat();
     
@@ -248,12 +248,12 @@ System.out.println("  Silahkan Pilih Menu ");
                                         System.out.println("Derajat Reamur");
                                         System.out.println("1. reamur ke celcius \n2. reamur ke farenhait \n 3.exit");
                                         System.out.println("Masukan nomer yang anda pilih: ");
-                                        F7 = sc.nextInt();
+                                        R1 = sc.nextInt();
                                         switch (R1) {
                                             case 1:
                                             float R8;
                                           
-                                            System.out.println("Reamur");
+                                            System.out.println("celcius");
                                             System.out.println("Masukan nomer yang anda pilih: ");
                                             R8 = sc.nextFloat();
 
@@ -264,7 +264,7 @@ System.out.println("  Silahkan Pilih Menu ");
                                             case 2:
                                             float R9;
                                           
-                                            System.out.println("Reamur");
+                                            System.out.println("farenhait");
                                             System.out.println("Masukan nomer yang anda pilih: ");
                                             R9 = sc.nextFloat();
 
