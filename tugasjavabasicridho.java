@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-public class tugasjavabasic {
+public class tugasjavabasicridho {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String sandinama = "Administrator";
